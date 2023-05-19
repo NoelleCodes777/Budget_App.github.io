@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20c8a444cc.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website About Us Page HTML CSS</title>
+    <link rel="stylesheet" href="{% static 'budgety/About.css' %}" />
+    
+    
+  </head>
+  <a href="{% url 'index' %}"><img src="{% static 'budgety/img/final_logo-removebg-preview.png' %}" height="64" width="80"></a>
+
+
+  <body>
+    <section class="About-us">
+      <div class="about">
+        <img src="{% static 'budgety/img/phonegreen2.png' %}" class="pic" />
+        <div class="text">
+          <h2>About Us</h2>
+          <h5> What is our signature?<span>BudgetHub</span></h5>
+          <p>BudgetHub enables you to monitor how much of your budget has been spent overtime, to see how much is remaining and correct when neceessary
+            We help you track your expenses,budgeting,savings and integrate a marketplace for you to buy products.
+            Our utmost motive is to help you realize your financial goals by providing a user friendly plan and blog.
+          </p>
+          <!-- <div class="data">
+            <a href="#" class="hire">Hire Me</a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+
+
+        <h3>Learn more</h3>
+        <p>Budgethub have access to your transactions to keep you updated of what is happening with your finance, so we would notify you about new products, goals,and milestones</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i></p>
+</section>
+
+    
+    <script src="{% static 'budgety/assets/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+      
+  </body>
+</html>

@@ -1,0 +1,257 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="{% static 'budgety/blogg.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/20c8a444cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="{% url 'index' %}"><img src="{% static 'budgety/img/final_logo-removebg-preview.png' %}" height="70" width="70"></a>
+            <div class="navbar" id="navbar">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="{% url 'index' %}">mybudget</a></li>
+                <li><a href="{% url 'Blog' %}">blog</a></li>
+                <li><a href="{% url 'connect' %}">Connect </a></li>
+                <li><a href="{% url 'About' %}">about us </a></li>
+                <li><a href="{% url 'Contact' %}">contact us</a></li>
+                
+        </ul>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>    
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Dave Ramsey</h1>
+        <p>"A budget is telling your money where to go instead of 
+
+            wondering where it went" <br>"You must gain control over your money or lack of it will forever control you"
+            <hr>
+            <h3>Take a tour through our blog and get financial tips, updates and recommendations</h3>
+         </p>
+        
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <h1>Financial Literacy</h1>
+        <p>BudgetHub has tons of great content 
+            to help you manage your money in a way that is personalized to who you are, <br>and what your goals are. Its just the thing to get you started and inspired in reaching your Financial goals </p>
+
+        <div class="row">
+            <div  class="about-col">
+                <h1>Paycheck to paycheck</h1>
+                <p>Pay check to paycheck living is usually a sign of not being in control of your money<br> However, we recognize that this isnt always the case.
+                what is in your control is how you react to the situation. If you are currently living paycheck to paycheck, whether it is your fault or not, you have the power to get yourself out of the situation.</p>
+            </div>
+
+            <div  class="about-col">
+                <h1>Pay off your unnecessary Debts</h1>
+                <p>Unneccessary debts is any debt that you didnt need to take on to further your financial goals. This is different for everyone but it could be purchasing something you didnt need
+                    on a credit card or financing a vacation ou couldnt afford.
+</p></div>
+            <div  class="about-col">
+                <h1>Be informed</h1>
+                <img src="{% static 'budgety/img/root2.jfif' %}">
+                click here <a href="https://www.amazon.com/Root-Budgeting-System-Cultivating-Financial-ebook/dp/B08N45YC5T/ref=as_li_ss_tl?dchild=1&keywords=The+Root+Budgeting+System&qid=1605811363&sr=8-1&linkCode=sl1&tag=atypicalfin07-20&linkId=08fc4b95f1f16b3fe6757c1342297533&language=en_US">The Root budgeting system</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="collections">
+        <h1> Recommended MarketPlace</h1>
+        <p>Helping customers realize thier financial goals by <br> integrating a recommended marketplace. </p>
+
+        <div class="row">
+            <div class="collect-col">
+                <img src="{% static 'budgety/img/jumia2.png' %}">
+                <div class="layer">
+                    <h3>Get products using our API</h3>
+                    <div>
+                        <button type="button" class="button"><a href="https://www.jumia.com.ng/">Visit site</a></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="collect-col">
+                <img src="{% static 'budgety/img/konga.png' %}">
+                <div class="layer">
+                    <h3>Cut your costs</h3>
+                    <div>
+                        <button type="button" class="button"><a href="https://www.konga.com/">Visit site</a></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="collect-col">
+                <img src="{% static 'budgety/img/super.png' %}">
+                <div class="layer">
+                    <h3>Spend wisely</h3>
+                    <div>
+                        <button type="button" class="button"><a href="https://www.supermart.ng/">Visit site</a></button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Properties -->
+    <section class="Property">
+        <h1>Videos on how to save more</h1>
+<p>Here are some videos to enlighten you on how to save and invest more. Watch till the end  </p>
+<div class="row">
+    <div class="Property-col">
+        
+        <video width="320" height="240" controls>
+            <source src="{% static 'budgety/img/video.mp4' %}" type="video/mp4">
+          </video>
+
+        
+        
+        <p>
+    </div>
+
+    
+    <div class="Property-col">
+        
+        <video width="320" height="240" controls>
+            <source src="{% static 'budgety/img/life.mp4' %}" type="video/mp4">
+          </video>
+
+        
+        
+
+    </div>
+    
+    <div class="Property-col">
+        
+        <video width="320" height="240" controls>
+            <source src="{% static 'budgety/img/kids.mp4' %}" type="video/mp4">
+          </video>
+
+        
+        
+        
+    </div>
+            
+</div>
+    </section>
+
+
+    <!-- Services  -->
+    <section class="Services">
+        <h1>Some discounted Products you may like</h1>
+        <p>Our recommended marketplace is giving out free coupons and promos . Check out some products you may need</p>
+        <div class="row">
+            <div class="Services-col">
+                <img src="{% static 'budgety/img/tv.jpeg' %}">
+
+            <div>
+            
+                <h1>Smartx</h1>
+
+
+                <div>
+                    <button type="button" class="button"><a href="https://www.supermart.ng/">Visit site</a></button>
+                    
+                </div>
+                </div>
+        </div>
+
+        <div class="Services-col">
+            <img src="{% static 'budgety/img/phone00.jpeg' %}">
+
+        <div>
+        
+            <h1>Plasma</h1>
+
+
+            <div>
+                <button type="button" class="button"><a href="https://www.konga.com/">Visit site</a></button>
+                
+            </div>
+            </div>
+    </div>
+
+
+    <div class="Services-col">
+        <img src="{% static 'budgety/img/tv.jpeg' %}">
+
+
+    <div>
+    
+        <h1>Plasma</h1>
+
+
+        <div>
+            <button type="button" class="button"><a href="https://www.jumia.com.ng/">Visit site</a></button>
+            
+        </div>
+        </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Become a beneficiary -->
+
+    <section class="Business">
+
+        <h1 style="color: rgb(13, 34, 13);">You are not like anyone else in this world.....</h1>
+        <p style="color:#fff">.....so why should your budget be just like everyone else's?</p>
+
+        <p style="color:aliceblue">Let BudgetHub teach you how to create your own budget that will be simple to
+            maintain, grow as you grow, and ultimately build the life that you want<br>
+
+            Say goodbye to financial stress, and hellow to financial freedom. Its treating your 
+            finances how they are meant to be treated.
+        </p>
+    </section>
+<hr>
+    <!-- footer -->
+    <section class="footer">
+
+
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quisquam ex labore facere,
+             perspiciatis vero iusto sed nobis et molestiae consequuntur, 
+            architecto dolore eius laboriosam magnam illo illum! Quidem, maxime?</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i></p>
+</section>
+    <!-- javascript for toogle-menu -->
+
+    <script>
+        var navBar=document.getElementById("navbar");
+        function showMenu(){
+            navBar.style.right = "0";
+
+        }
+        function hideMenu(){
+            navBar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

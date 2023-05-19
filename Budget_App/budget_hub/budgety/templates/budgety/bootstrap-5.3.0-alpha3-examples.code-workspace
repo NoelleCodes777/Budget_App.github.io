@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../bootstrap-5.3.0-alpha3-examples"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../e_commerce"
+		},
+		{
+			"path": "../../../../../CBC 1 cohort"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CBC 1 cohort"
+	}
+}
